@@ -34,6 +34,7 @@ public class Player : MonoBehaviour {
 			snelheid.x = 0;
 		}
 		
+		
 		if (Input.GetAxis("Jump") > 0)
 		{
 			transform.position += transform.up * jumpSpeed * Time.deltaTime;
