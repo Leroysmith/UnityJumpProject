@@ -1,11 +1,11 @@
 using UnityEngine;
 using System.Collections;
 
-public class Coin : MonoBehaviour {
+public class Destination : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	gameObject.name = "Coin";
+	gameObject.name = "Destination";
 	}
 	
 	// Update is called once per frame
