@@ -4,9 +4,6 @@ using System.Collections;
 public class Player : MonoBehaviour {
 	
 	public bool isOnPlatform = false;
-	public float Gravity;
-	public float jumpSpeed = 20f;
-	public float runSpeed = 20f;
 
 	// Use this for initialization
 	void Start () {
@@ -16,10 +13,10 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 		void FixedUpdate () {
 		Vector3 snelheid = new Vector3();
-		
-		
+		float runSpeed = 20f;
+		float jumpSpeed = 20f;
 
-		rigidbody.AddRelativeForce(new Vector3(0, Gravity, 0));
+		
 		snelheid.y = rigidbody.velocity.y;
 		
 		if (Input.GetAxis("Horizontal") < 0)
